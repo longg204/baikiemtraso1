@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/congan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/truoctencongan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@id/congan"
+        android:text="Tên công an:"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tencongan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/truoctencongan"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/truoccapbac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tencongan"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/congan"
+        android:text="Cấp bậc:"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/capbac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tencongan"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/truoccapbac"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/truocnoicongtac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capbac"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/congan"
+        android:text="Nơi công tác:" />
+
+        <TextView
+            android:id="@+id/noicongtac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capbac"
+            android:layout_toRightOf="@id/truocnoicongtac"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/truocquocgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noicongtac"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/congan"
+        android:text="Quốc gia:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/quocgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noicongtac"
+        android:layout_toRightOf="@id/truocquocgia"
+        android:text=""
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/truocsosao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quocgia"
+        android:layout_toRightOf="@+id/congan"
+        android:text="Số sao:"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/sosao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quocgia"
+        android:layout_toRightOf="@id/truocsosao"
+        android:text=""
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/imgsao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quocgia"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/truocsosao"
+        android:src="@drawable/ic_star"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>
